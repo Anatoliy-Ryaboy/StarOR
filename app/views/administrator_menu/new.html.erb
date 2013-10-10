@@ -1,0 +1,15 @@
+<h1>Administrative Menu</h1>
+<p>Welcome to the StarOR administrative application! Please select function.</p>
+
+<%= form_for(:administrator_menu, :url => administrator_menu_path) do |f| %>
+    <div>
+      <%=f.submit "Create New User" %>
+    </div>
+
+    <div>
+      <%=f.submit "Create new Role" %>
+    </div>
+    <div>
+      <%=f.submit "Create new Permission" %>
+    </div>
+<% end %>
